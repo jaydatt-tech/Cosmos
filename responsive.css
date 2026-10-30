@@ -1,0 +1,55 @@
+@media (max-width: 980px) {
+  .page-shell { padding: 0 4%; }
+  .main-nav { gap: 15px; }
+  .main-nav a { font-size: 11px; }
+  .header-cta { display: none; }
+  .hero { min-height: 520px; }
+  .hero-art { transform: scale(.86); }
+  .mission-planet { right: -5%; }
+}
+@media (max-width: 700px) {
+  .page-shell { padding: 0 20px; }
+  .site-header { height: 72px; }
+  .menu-toggle { display: flex; flex-direction: column; gap: 5px; border: 1px solid var(--line); background: #101a30; border-radius: 5px; padding: 10px; cursor: pointer; }
+  .menu-toggle span { display: block; width: 18px; height: 2px; background: #dceaff; }
+  .main-nav { display: none; position: absolute; top: 71px; left: 0; right: 0; padding: 17px 20px 20px; background: #0b1224; border: 1px solid var(--line); border-radius: 0 0 8px 8px; flex-direction: column; align-items: stretch; gap: 0; }
+  .main-nav.open { display: flex; }
+  .main-nav a { padding: 12px 4px; border-bottom: 1px solid var(--line); font-size: 12px; }
+  .main-nav a.active:after { display: none; }
+  .hero { display: flex; flex-direction: column; align-items: stretch; padding: 65px 0 55px; min-height: 0; }
+  h1 { font-size: clamp(43px, 12vw, 63px); letter-spacing: -2.7px; }
+  .hero-description { font-size: 13px; }
+  .hero-art { height: 320px; transform: none; margin-top: 15px; }
+  .hero-planet { width: 220px; }
+  .orbit-one { width: 290px; height: 110px; }.orbit-two { width: 340px; height: 145px; }.orbit-three { width: 270px; height: 270px; }
+  .planet-glow { width: 260px; height: 260px; }
+  .label-top { top: 17px; right: 0; }.label-bottom { bottom: 18px; left: 0; }
+  .scroll-cue { display: none; }
+  .discovery-strip { align-items: flex-start; gap: 15px; }
+  .discovery-strip > a { text-align: right; line-height: 1.7; }
+  .section-block { padding-top: 70px; }
+  .section-heading { align-items: flex-start; gap: 15px; }
+  .section-heading .text-link { margin-top: 20px; white-space: nowrap; }
+  .destination-grid { grid-template-columns: 1fr; }
+  .destination-card { min-height: 270px; }
+  .destination-art { height: 140px; }
+  .solar-preview { grid-template-columns: 1fr; gap: 15px; }
+  .solar-visual { height: 340px; transform: scale(.9); }
+  .fact-card { padding: 27px 22px; gap: 18px; align-items: flex-start; }
+  .fact-orb { width: 48px; height: 48px; font-size: 21px; }
+  .fact-copy h2 { font-size: 23px; }
+  .fact-index { position: absolute; right: 20px; bottom: 20px; }
+  .fact-copy p { padding-bottom: 12px; }
+  .mission-banner { padding: 30px 25px; min-height: 340px; align-items: flex-start; }
+  .mission-copy { max-width: 100%; }
+  .mission-planet { width: 240px; height: 240px; right: -55px; top: auto; bottom: -110px; opacity: .65; }
+  .moon { width: 50px; height: 50px; }
+  .newsletter-section { flex-direction: column; align-items: stretch; padding: 70px 0; }
+  .search-form { width: 100%; }
+  .site-footer { padding: 25px 0; flex-wrap: wrap; }
+  .site-footer p { order: 3; width: 100%; }
+  .copyright { font-size: 7px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}
